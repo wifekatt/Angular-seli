@@ -1,0 +1,40 @@
+.btn-color{
+    background-color: #008ce1;
+    color: #fff;
+    
+  }
+  
+  .profile-image-pic{
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+  }
+  
+ .card{
+    opacity: 92%;
+ }
+  
+  .cardbody-color{
+    background-color: #ffffff;
+  }
+  
+  a{
+    color:black;
+  }
+  .row {
+    display: flex;
+    flex-wrap: inherit;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}

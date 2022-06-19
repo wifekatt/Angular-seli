@@ -1,0 +1,48 @@
+<div class="container-fluid" style="background-image: url('/assets/img/voteback.png');">
+  <div class="container" >
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
+          <div class="card my-5">
+            <form class="card-body cardbody-color p-lg-5" (ngSubmit)="userLogin()">
+              <!--
+              <div class="row"><button type="submit" class="btn btn-color  w-50">Admin</button>
+              <button type="submit" class="btn btn-color w-50 pull-right">User</button></div>
+              -->
+
+              <div class="text-center">
+                <img src="/assets/img/logo.png" class="img-fluid profile-image-pic img-thumbnail rounded-circle my-3"
+                  width="200px" alt="profile">
+              </div>
+              <br>
+              <p>we've sent a verification code to your email - Ex. pat@example.com</p>
+
+              <div class="mb-3">
+                <mat-form-field class="example-full-width" appearance="outline">
+                  <mat-label>Email</mat-label>
+                  <input id="email" name="email" type="email" matInput [formControl]="emailFormControl" [(ngModel)]="electeur.email" placeholder="Ex. pat@example.com">
+                  <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+                    Please enter a valid email address
+                  </mat-error>
+                  <mat-error *ngIf="emailFormControl.hasError('required')">
+                    Email is <strong>required</strong>
+                  </mat-error>
+                </mat-form-field>
+              </div>
+              <div class="mb-3">
+                <mat-form-field class="example-full-width" appearance="outline">
+                  <mat-label>Code</mat-label>
+                  <input id="Code" name="Code" type="text" matInput [formControl]="CodeFormControl"  placeholder="Ex. 123456">
+                  <mat-error *ngIf="CodeFormControl.hasError('required')">
+                    Code is <strong>required</strong>
+                  </mat-error>
+                </mat-form-field>
+              </div>
+              <div class="text-center"><button type="submit" class="btn btn-color px-5 mb-5 w-100" routerLink="/votefront">Login</button></div>
+
+          </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
